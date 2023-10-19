@@ -5,13 +5,13 @@ function calcGrossPrice(netPrice, taxRate) {
   return netPrice + netPrice * taxRate;
 }
 function addPositive(a, b) {
-  if (a > 0 && b > 0) {
+  if (a >= 0 && b >= 0) {
     return a + b;
-  } else if (a < 0 && b > 0) {
+  } else if (a <= 0 && b >= 0) {
     return a * -1 + b;
-  } else if (a > 0 && b < 0) {
+  } else if (a >= 0 && b <= 0) {
     return a + b * -1;
-  } else if (a < 0 && b < 0) {
+  } else if (a <= 0 && b <= 0) {
     return a * -1 + b * -1;
   }
 }
