@@ -34,11 +34,11 @@ console.log(oddEven(10));
 // result should be even
 
 function oldYoung(age) {
-  if (age <= 16 && age > 0) {
+  if (age < 16 && age >= 0) {
     return "children";
-  } else if (age <= 50 && age > 0) {
+  } else if (age < 50 && age >= 0) {
     return "young person";
-  } else if (age > 50) {
+  } else if (age >= 50) {
     return "elder person";
   } else {
     return "invalid parameter";

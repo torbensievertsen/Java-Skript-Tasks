@@ -5,7 +5,8 @@ function calcGrossPrice(netPrice, taxRate) {
   return netPrice + netPrice * taxRate;
 }
 function addPositive(a, b) {
-  if (a >= 0 && b >= 0) {
+  return Math.abs(a) + Math.abs(b);
+  /*if (a >= 0 && b >= 0) {
     return a + b;
   } else if (a <= 0 && b >= 0) {
     return a * -1 + b;
@@ -13,7 +14,7 @@ function addPositive(a, b) {
     return a + b * -1;
   } else if (a <= 0 && b <= 0) {
     return a * -1 + b * -1;
-  }
+  }*/
 }
 
 // TODO: implement welcomeMsg function
